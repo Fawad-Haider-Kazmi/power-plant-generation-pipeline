@@ -53,6 +53,7 @@ that exact path before running the pipeline.
 ---
 
 ## Project Structure
+
 power-plant-generation-pipeline/
 ├── .github/workflows/ci.yml # GitHub Actions CI - runs tests on every push
 ├── .gitignore
