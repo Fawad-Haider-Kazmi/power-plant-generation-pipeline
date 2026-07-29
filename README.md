@@ -52,57 +52,6 @@ that exact path before running the pipeline.
 
 ---
 
-## Project Structure
-
-power-plant-generation-pipeline/
-.github/workflows/ci.yml # GitHub Actions CI - runs tests on every push
-.gitignore
-requirements.txt
- README.md
- main.py # Orchestrates the full pipeline end-to-end
-
-├── data/
- global_power_plant_database.csv # raw source data (input)
- processed_power_plant.csv # generated: after cleaning
- model_ready_power_plant.csv # generated: after feature selection
-
-├── models/ # generated: trained model files (.pkl)
-
-├── outputs/
-  EDA/ # generated: exploratory analysis charts
-  MissingValueGraphs/ # generated: missing-data visualizations
-  FeatureSelection/ # generated: correlation heatmap + scores
-  ModelTraining/ # generated: prediction error distributions
-  ModelComparison/ # generated: metrics table + comparison charts
-  Results/ # generated: pipeline_summary.json
-
-├── src/
-  config.py # paths, constants, hyperparameter grids
- ├── data/
-   data_loader.py # DataLoader - loading & understanding
-   data_cleaner.py # DataCleaner - cleaning & preprocessing
- ├── features/
-   feature_engineer.py # FeatureEngineer - derives plant_age_years etc.
- │ └── feature_selector.py # FeatureSelector - correlation-based selection
-│ ├── eda/
-│ │ └── eda_analyzer.py # EDAAnalyzer - generates all EDA plots
-│ ├── models/
-│ │ ├── model_trainer.py # ModelTrainer - trains RF & Gradient Boosting
-│ │ ├── model_evaluator.py # ModelEvaluator - RMSE / MAE / R²
-│ │ ├── model_tuner.py # HyperparameterTuner - GridSearchCV wrapper
-│ │ └── model_comparator.py # ModelComparator - side-by-side comparison
-│ ├── inference/
-│ │ └── predictor.py # Predictor - loads a saved model, scores new data
-│ └── utils/
-│ └── logger.py # shared logging factory
-│
-└── tests/
-├── test_data_cleaner.py
-├── test_feature_engineer.py
-└── test_feature_selector.py
-
----
-
 ## Installation Steps
 
 ### 1. Clone the repository
