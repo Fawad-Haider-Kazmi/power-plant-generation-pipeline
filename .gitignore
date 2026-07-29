@@ -18,3 +18,7 @@ Thumbs.db
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Trained models can be very large (unbounded Random Forest trees especially) -
+# excluded from version control. Regenerate them locally with: python main.py
+models/*.pkl
