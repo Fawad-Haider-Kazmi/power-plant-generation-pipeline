@@ -211,10 +211,10 @@ tab on GitHub to see the latest run status.
 
 | Model | RMSE | MAE | R² Score |
 |---|---|---|---|
-| Random Forest | [value] | [value] | [value] |
-| Gradient Boosting | [value] | [value] | [value] |
-| Random Forest (Tuned) | [value] | [value] | [value] |
-| Gradient Boosting (Tuned) | [value] | [value] | [value] |
+| Random Forest | 636.95 | 83.71 | 0.9419 |
+| Gradient Boosting | 668.11 | 123.85 | 0.9361 |
+| Random Forest (Tuned) | 639.73 | 84.14 | 0.9414 |
+| Gradient Boosting (Tuned) | 668.11 | 123.85 | 0.9361 |
 
 **Best model:** [model name] — selected by lowest RMSE.
 
@@ -236,7 +236,3 @@ final metrics) is saved to `outputs/Results/pipeline_summary.json`.
 
 Syed Fawad Haider Kazmi
 GitHub: [Fawad-Haider-Kazmi](https://github.com/Fawad-Haider-Kazmi)
-
-
-
-## Project Structure
