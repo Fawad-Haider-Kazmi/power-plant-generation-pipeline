@@ -41,9 +41,9 @@
   "final_metrics": [
     {
       "Model": "random_forest",
-      "RMSE": 737.9144454401994,
-      "MAE": 99.4700402779804,
-      "R2_Score": 0.922076402740154
+      "RMSE": 636.9497137518839,
+      "MAE": 83.7126470478777,
+      "R2_Score": 0.9419413060185637
     },
     {
       "Model": "gradient_boosting",
@@ -53,9 +53,9 @@
     },
     {
       "Model": "random_forest_tuned",
-      "RMSE": 692.0487285120313,
-      "MAE": 92.489626624145,
-      "R2_Score": 0.9314621749158588
+      "RMSE": 639.7255552731873,
+      "MAE": 84.13568307181654,
+      "R2_Score": 0.941434161095779
     },
     {
       "Model": "gradient_boosting_tuned",

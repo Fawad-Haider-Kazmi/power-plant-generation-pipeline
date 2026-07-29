@@ -50,11 +50,11 @@ CV_FOLDS = 5
 # Hyperparameter grids
 
 RANDOM_FOREST_PARAM_GRID = {
-    "n_estimators": [100, 150],
-    "max_depth": [8, 12, 15],
-    "min_samples_leaf": [3, 5, 10],
-    "min_samples_split": [10, 20],
+    "n_estimators": [100, 200],
+    "max_depth": [None, 8, 15],
+    "min_samples_split": [2, 5],
 }
+
 GRADIENT_BOOSTING_PARAM_GRID = {
     "n_estimators": [100, 200],
     "max_depth": [2, 3],
