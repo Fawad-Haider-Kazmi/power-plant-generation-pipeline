@@ -20,7 +20,8 @@ class ModelTrainer:
       
         self.models: Dict[str, object] = {
             "random_forest": RandomForestRegressor(
-                n_estimators=300, max_depth=None, random_state=random_state, n_jobs=-1
+                n_estimators=100, max_depth=12,min_samples_leaf=5,
+    min_samples_split=10, random_state=random_state, n_jobs=-1
             ),
             "gradient_boosting": GradientBoostingRegressor(
                 n_estimators=200, max_depth=3, learning_rate=0.1, random_state=random_state
