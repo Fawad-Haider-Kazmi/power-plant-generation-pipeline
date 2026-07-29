@@ -1,0 +1,67 @@
+{
+  "dataset_understanding": {
+    "n_rows": 34936,
+    "n_columns": 36
+  },
+  "cleaning_report": {
+    "rows_before": 34936,
+    "rows_after": 33138,
+    "rows_dropped_missing_target": 1798,
+    "duplicates_removed": 0,
+    "missing_numeric_imputed": 274819,
+    "missing_categorical_filled": 150600,
+    "target_outliers_flagged": 5648
+  },
+  "selected_features": [
+    "capacity_mw",
+    "generation_gwh_2016",
+    "generation_gwh_2017",
+    "generation_gwh_2015",
+    "generation_gwh_2018",
+    "generation_gwh_2014",
+    "generation_gwh_2013",
+    "primary_fuel",
+    "estimated_generation_gwh_2015",
+    "estimated_generation_gwh_2014",
+    "generation_gwh_2019",
+    "estimated_generation_gwh_2013",
+    "estimated_generation_gwh_2016",
+    "source",
+    "longitude",
+    "geolocation_source",
+    "owner",
+    "plant_age_years",
+    "year_of_capacity_data",
+    "latitude"
+  ],
+  "train_test_split": {
+    "train_rows": 26510,
+    "test_rows": 6628
+  },
+  "final_metrics": [
+    {
+      "Model": "random_forest",
+      "RMSE": 636.9497137518838,
+      "MAE": 83.71264704787768,
+      "R2_Score": 0.9419413060185637
+    },
+    {
+      "Model": "gradient_boosting",
+      "RMSE": 668.107466772355,
+      "MAE": 123.84730149202339,
+      "R2_Score": 0.9361222486386166
+    },
+    {
+      "Model": "random_forest_tuned",
+      "RMSE": 639.7255552731873,
+      "MAE": 84.13568307181653,
+      "R2_Score": 0.941434161095779
+    },
+    {
+      "Model": "gradient_boosting_tuned",
+      "RMSE": 668.107466772355,
+      "MAE": 123.84730149202339,
+      "R2_Score": 0.9361222486386166
+    }
+  ]
+}
